@@ -1,10 +1,10 @@
 {
-  "author": "YOU <YOU@example.com>",
-  "name": "my_actionhero_project",
-  "description": "my actionhero project",
+  "author": "Mingyi Zhang <mingyi.z@outlook.com>",
+  "name": "webstreamer",
+  "description": "Web service of streaming media",
   "version": "0.1.0",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=10.0.0"
   },
   "dependencies": {
     "actionhero": "19.0.2",

@@ -1,16 +1,16 @@
 'use strict'
 const ActionHero = require('actionhero')
 
-module.exports = class MyAction extends ActionHero.Action {
+module.exports = class LoginAction extends ActionHero.Action {
   constructor () {
     super()
     this.name = 'login'
-    this.description = 'an actionhero action'
+    this.description = 'Webstreamer login action'
     this.outputExample = {}
   }
 
   async run (data) {
-	data.response.hello="hello world"
+    data.response.token = 'webstreamer'
     // your logic here
   }
 }

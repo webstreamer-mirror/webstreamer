@@ -1,7 +1,8 @@
 'use strict'
 const ActionHero = require('actionhero')
+// const user = require('../api/user')
 
-module.exports = class LoginAction extends ActionHero.Action {
+module.exports = class Login extends ActionHero.Action {
   constructor () {
     super()
     this.name = 'login'
@@ -10,7 +11,12 @@ module.exports = class LoginAction extends ActionHero.Action {
   }
 
   async run (data) {
-    data.response.token = 'webstreamer'
-    // your logic here
+    try {
+      // var info = await user.add(_TokenCount, data.param)
+      data.response.token = 'admin'
+      // data.response.info = info
+    } catch (error) {
+      data.response.error = error
+    }
   }
 }

@@ -11,6 +11,8 @@ public/javascript/ActionheroWebsocketClient.min.js
 
 # Node / NPM
 npm-debug.log
+package-lock.json
+apidoc
 
 # OS-specific wierdness
 .DS_Store

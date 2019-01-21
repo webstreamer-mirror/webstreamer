@@ -8,9 +8,11 @@
   },
   "dependencies": {
     "actionhero": "19.1.0",
-    "ws": "latest",
+    "apidoc": "^0.17.7",
+    "babel-eslint": "^10.0.1",
     "ioredis": "latest",
-    "winston": "latest"
+    "winston": "latest",
+    "ws": "latest"
   },
   "devDependencies": {
     "jest": "latest",

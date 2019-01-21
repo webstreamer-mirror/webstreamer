@@ -1,0 +1,20 @@
+{
+    "name": "WebStreamerAPIs",
+    "version": "0.1.0",
+    "description": "API interfaces for webstreamer",
+    "title": "WebStreamerAPIs",
+    "url": "http://127.0.0.1:8080",
+    "order": [
+        "livestream_create",
+        "livestream_destroy",
+        "livestream_update_status",
+        "livestream_add_audience",
+        "livestream_remove_audience",
+        "multipoints_create",
+        "multipoints_destroy",
+        "multipoints_update_status",
+        "multipoints_add_member",
+        "multipoints_remove_member",
+        "multipoints_set_speaker"
+    ]
+}

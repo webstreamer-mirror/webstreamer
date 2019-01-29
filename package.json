@@ -1,44 +1,46 @@
 {
-  "author": "Mingyi Zhang <mingyi.z@outlook.com>",
-  "name": "webstreamer",
-  "description": "Web service of streaming media",
-  "version": "0.1.0",
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "dependencies": {
-    "actionhero": "19.1.0",
-    "apidoc": "^0.17.7",
-    "babel-eslint": "^10.0.1",
-    "ioredis": "latest",
-    "winston": "latest",
-    "ws": "latest"
-  },
-  "devDependencies": {
-    "jest": "latest",
-    "standard": "latest"
-  },
-  "scripts": {
-    "start": "actionhero start",
-    "actionhero": "actionhero",
-    "pretest": "standard",
-    "test": "jest"
-  },
-  "standard": {
-    "ignore": [
-      "public/javascript/ActionheroWebsocketClient.*"
-    ],
-    "globals": [
-      "describe",
-      "test",
-      "beforeAll",
-      "beforeEach",
-      "afterAll",
-      "afterEach",
-      "expect"
-    ]
-  },
-  "jest": {
-    "testEnvironment": "node"
-  }
+    "author": "Mingyi Zhang <mingyi.z@outlook.com>",
+    "name": "webstreamer",
+    "description": "Web service of streaming media",
+    "version": "0.1.0",
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "dependencies": {
+        "actionhero": "19.1.0",
+        "apidoc": "^0.17.7",
+        "ioredis": "latest",
+        "rtcmulticonnection-server": "latest",
+        "socket.io": "latest",
+        "winston": "latest",
+        "ws": "latest"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.1",
+        "jest": "latest",
+        "standard": "latest"
+    },
+    "scripts": {
+        "start": "actionhero --help",
+        "actionhero": "actionhero",
+        "pretest": "standard",
+        "test": "jest"
+    },
+    "standard": {
+        "ignore": [
+            "public/javascript/ActionheroWebsocketClient.*"
+        ],
+        "globals": [
+            "describe",
+            "test",
+            "beforeAll",
+            "beforeEach",
+            "afterAll",
+            "afterEach",
+            "expect"
+        ]
+    },
+    "jest": {
+        "testEnvironment": "node"
+    }
 }

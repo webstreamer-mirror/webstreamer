@@ -30,6 +30,10 @@ module.exports = class MyInitializer extends ActionHero.Initializer {
 
             await livestream.initialize();
             self.livestreams[`${id}`] = { 'app': livestream, 'state': 'idle', 'audience': {} };
+            livestream.on(`webrtc-peer-disconnected`, async (name) => {
+                delete self.livestreams[`${id}`].audience[`${name}`];
+                ActionHero.api.log(`remove_audience: audience ${name} is disconnected and removed from livestream ${id}!`, 'info');
+            });
 
         };
 

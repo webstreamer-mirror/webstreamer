@@ -29,15 +29,20 @@ exports.default = {
             post: [
                 { path: '/test/test_server', action: 'CreateRtspTestServer' },
                 { path: '/livestream', action: 'CreateLivestream' },
-                { path: '/livestream/audience', action: 'AddAudience' }
+                { path: '/livestream/audience', action: 'AddAudience' },
+                { path: '/multipoint', action: 'CreateMultipoint' },
+                { path: '/multipoint/member', action: 'AddMember' }
             ],
             put: [
-                { path: '/livestream/status', action: 'UpdateLivestream' }
+                { path: '/livestream/status', action: 'UpdateLivestream' },
+                { path: '/multipoint/status', action: 'UpdateMultipoint' }
             ],
             delete: [
                 { path: '/test/test_server', action: 'DestroyRtspTestServer' },
                 { path: '/livestream', action: 'DestroyLivestream' },
-                { path: '/livestream/audience', action: 'RemoveAudience' }
+                { path: '/livestream/audience', action: 'RemoveAudience' },
+                { path: '/multipoint', action: 'DestroyMultipoint' },
+                { path: '/multipoint/member', action: 'RemoveMember' }
 
             ]
 

@@ -142,6 +142,7 @@ module.exports = class MyInitializer extends ActionHero.Initializer {
 
             delete self.livestreams[`${id}`];
             await livestream.terminate();
+            livestream = null;
         };
     }
 
